@@ -1,0 +1,79 @@
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+.signIn:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.search:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.basket:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    font-weight: bold;
+}
+
+.field1 {
+    width: 80%;
+    border: 1px solid green;
+    margin-bottom: 3%;
+}
+
+.field2 {
+    width: 80%;
+    border: 1px solid green;
+}
+.shopName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+}
+  
+.modalSignIn {
+    position: absolute;
+    width: 25%;
+    left: 35%;
+    top: 10%;
+    z-index: 7;
+}
+  
+.modalSignUp {
+    position: absolute;
+    width: 25%;
+    left: 36%;
+    top: 5%;
+    z-index: 7;
+}
+  
+.modalSearch {
+    position: absolute;
+    left: 72%;
+    top: 10%;
+    z-index: 7;
+}
+  
+.modalBasket {
+    position: absolute;
+    left: 72%;
+    top: 10%;
+    z-index: 7;
+}
+
+  

@@ -1,0 +1,13 @@
+.homePage {
+  text-decoration: none;
+  font-size: 350%;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  background-color: rgba(238, 238, 238, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

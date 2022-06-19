@@ -1,0 +1,15 @@
+.partOne {
+    display: flex;
+    flex-direction: row;
+}
+
+.partTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

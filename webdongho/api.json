@@ -1,0 +1,97 @@
+{
+    "stores": [
+        {
+            "id": "1",
+            "name": "Html",
+            "price": "1150$",
+            "url_cart": "/Cart/html",
+            "url_todos": "/todos/html",
+            "url_todos_img_left": "https://vietnix.vn/wp-content/uploads/2021/02/html-la-gi.jpg",
+            "url_todos_img_rights": [
+                {
+                    "url_cart": "/Cart/html",
+                    "id": "1",
+                    "name": "Html 1",
+                    "price": "50$",
+                    "url_img_right": "https://resources.stdio.vn/content/article/html-phan-1-co-ban-ve-html/thumbnail-hd/blob-1598602790106@1280x720.jpg"
+                },
+                {
+                    "url_cart": "/Cart/html",
+                    "id": "2",
+                    "name": "Html 2",
+                    "price": "1150$",
+                    "url_img_right": "https://vietnix.vn/wp-content/uploads/2021/07/html-la-gi.webp"
+                },
+                {
+                    "url_cart": "/Cart/html",
+                    "id": "3",
+                    "name": "Html 3",
+                    "price": "1150$",
+                    "url_img_right": "https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/01/pasted-image-0-2.png"
+                },
+                {
+                    "url_cart": "/Cart/html",
+                    "id": "4",
+                    "name": "Html 4",
+                    "price": "1150$",
+                    "url_img_right": "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "CSS",
+            "price": "1250$",
+            "url_cart": "/Cart/css",
+            "url_todos": "/todos/css",
+            "url_todos_img_left": "https://mona.media/wp-content/uploads/2021/07/css.png",
+            "url_todos_img_rights": [
+                {
+                    "url_cart": "/Cart/css",
+                    "id": "1",
+                    "name": "CSS 1",
+                    "price": "1250$",
+                    "url_img_right": "https://mona.media/wp-content/uploads/2021/07/css.png"
+                },
+                {
+                    "url_cart": "/Cart/css",
+                    "id": "2",
+                    "name": "CSS 2",
+                    "price": "1250$",
+                    "url_img_right": "https://images.viblo.asia/61acab5b-2e62-43e9-9617-525bdddb8d54.png"
+                },
+                {
+                    "url_cart": "/Cart/css",
+                    "id": "3",
+                    "name": "CSS 3",
+                    "price": "1250$",
+                    "url_img_right": "https://niithanoi.edu.vn/pic/News/images/tin-tuc-cong-nghe-va-lap-trinh/css-selector-la-gi.jpg"
+                },
+                {
+                    "url_cart": "/Cart/css",
+                    "id": "4",
+                    "name": "CSS 4",
+                    "price": "1250$",
+                    "url_img_right": "https://images.viblo.asia/61acab5b-2e62-43e9-9617-525bdddb8d54.png"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "javascript",
+            "price": "1350$",
+            "url_cart": "/Cart/javascript",
+            "url_todos": "/todos/javascript",
+            "url_todos_img_left": "http://tmnamhai.net/wp-content/uploads/2021/07/et.png",
+            "url_todos_img_rights": [
+                {
+                    "url_cart": "/Cart/javascript",
+                    "id": "1",
+                    "name": "javascript 1",
+                    "price": "1350$",
+                    "url_img_right": "https://thietkewebdalat.net/blog/wp-content/uploads/2020/04/javascript-la-gi.jpg"
+                }
+            ]
+        }
+    ]
+}
