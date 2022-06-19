@@ -1,0 +1,172 @@
+.container1
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name
+{
+  width: 360px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.email
+{
+  width: 353px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.date_gender
+{
+  width: 360px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.date_gender input
+{
+  width: 290px;
+  margin-right: 20px;
+}
+
+.date_gender select
+{
+  width: 290px;
+}
+
+.username
+{
+  width: 353px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.password
+{
+  width: 360px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.checkbox
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.signup
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+}
+
+.container2
+{
+  border-top: 2px solid #dddddd;
+  margin-top: 5%;
+}
+
+.inputSearch
+{
+  width: 500px;
+  height: 24px;
+  margin: 2% 1%;
+}
+
+.btn-search
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+  margin-right: 2%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid #dddddd;
+  width: 100%;
+  align-items: center;
+}
+
+td, th {
+  border-bottom: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.operation
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+  margin-right: 3%;
+}
+
+.btn-delete
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #dc3545;  
+  border-color: #dc3545;  
+}
+
+.filter
+{
+  width: 100px;
+  height: 30px;
+}
+
+.btn-filter
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+  margin-left: 1%;
+}
+
+.btn-sort
+{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+  margin-left: 1%;
+}
