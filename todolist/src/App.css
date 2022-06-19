@@ -1,0 +1,204 @@
+/*Style Todo*/
+
+/*Style cho box chứa Add Todo*/
+h1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1
+{
+  width: 96%;
+  height: 40%;
+  margin: 0 2%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 2%;
+}
+
+.item
+{
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.inputTodo
+{
+  width: 97%;
+  height: 40px;
+  margin: 0 1%;
+  font-size: 100%;
+}
+
+.note 
+{
+  margin-left: 1%;
+}
+
+.buttonTodo
+{
+  margin-left: 1%;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+}
+
+/*Style cho box chứa List Todo*/
+.container2
+{
+  width: 96%;
+  height: 50%;
+  margin: 0 2%;
+  margin-top: 5%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 2%;
+}
+
+.littlecontainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 140%;
+  background-color: rgba(192,192,192, 0.3);
+}
+
+.task
+{
+  width: 70%;
+}
+
+.operation
+{
+  width: 28%;
+  padding-right: 1%;
+  display: flex;
+  align-items: center;
+}
+
+.inputSearch
+{
+  margin-right: 2%;
+  width: 50%;
+  font-weight: 400;
+  line-height: 2.4;
+}
+.buttonSearch
+{
+  margin-right: 2%;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+}
+
+.buttonSort
+{
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+}
+
+table 
+{
+  border-collapse: collapse;
+  width: 98%;
+  margin: 0 1%;
+}
+
+td, th 
+{
+  text-align: left;
+  padding: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonStatus 
+{
+  margin-right: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #007bff;  
+  border-color: #007bff;
+}
+
+.buttonDelete
+{
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #dc3545;  
+  border-color: #dc3545;
+}
+
+table
+{
+  margin-top: 1%;
+}
+
+
+
+
+
+
+
