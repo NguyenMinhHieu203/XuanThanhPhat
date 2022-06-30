@@ -54,7 +54,7 @@ function Title() {
     }
     
     return(
-        <div className="app">
+        <div className="app7">
             <div className='header'>
             <Button onClick={handleSignIn} className="signIn">Đăng nhập</Button>
             <div className='shopName'>

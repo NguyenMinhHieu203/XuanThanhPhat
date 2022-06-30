@@ -1,0 +1,98 @@
+.gt {
+    background-image: url("./images/banner-11.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 28%;
+    font-size: 120%;
+}
+
+.l2 {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 16%;
+}
+
+.l3 {
+    margin-right: 25px;
+}
+
+.l4 {
+    margin-left: 25px;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    margin-left: 31%;
+    margin-top: 2%;
+    font-size: 150%;
+}
+
+.slash {
+    color: white;
+    margin-bottom: 17%;
+}
+
+.shoe-img {
+    width: 20%;
+    height: 60%;
+    margin-left: 4%;
+    margin-right: 2%;
+}
+
+.t1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.t2 {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.t3 {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.t4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.v1 {
+    border-left: 3px solid rgb(178,34,34);
+    height: 140px; 
+}
+
+.r1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4%;
+    margin-left: 0;
+}
+
+.t5 {
+    color: rgb(178,34,34);
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.t6 {
+    font-size: 105%;
+}

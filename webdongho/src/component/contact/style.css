@@ -1,0 +1,108 @@
+.app2 {
+    background-color: black;
+    padding-bottom: 1%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 12%;
+    margin-bottom: 1%;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    margin-right: 2%;
+}
+
+.content {
+    color: rgb(169,169,169);
+}
+
+.title1 {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    margin-right: 2%;
+    margin-left: 12%;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+}
+
+.pageOne {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+.pageTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 10%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.page {
+    color: rgb(169,169,169);
+    text-decoration: none;
+}
+
+.social {
+    color: rgb(169,169,169);
+    margin-right: 5%;
+}
+
+.c1 {
+    width: 25%;
+    margin-top: 3%;
+}
+
+.c2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.p {
+    color: rgb(169,169,169);
+    margin-left: 2%;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input {
+    width: 15%;
+    height: 36px;
+}
+
+.btn {
+    background-color: rgb(220,20,60);
+    color: white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.pay {
+    margin-left: 3%;
+}
+

@@ -86,7 +86,7 @@ function Slide() {
         setButton3("hidden");
     }
     return (
-        <div className="app">
+        <div className="app5">
             <div className="slideShow">
             <Slideshow />
             </div>

@@ -86,7 +86,7 @@ function Sale() {
         setButton8("hidden");
     }
     return(
-        <div className="app">
+        <div className="app3">
             <div>
                 <h4 style={{textAlign: "center"}}>SẢN PHẨM GIẢM GIÁ</h4>
                 <hr />
@@ -143,7 +143,7 @@ function Sale() {
                     <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button8}`}}>Thêm vào giỏ</Button>
                 </div>
             </div>
-            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}>XEM TẤT CẢ</Button>
+            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%", marginTop: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}>XEM TẤT CẢ</Button>
         </div>
     );
 }

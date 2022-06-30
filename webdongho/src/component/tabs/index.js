@@ -256,7 +256,7 @@ function Product() {
         setValue(newValue);
     };
     return (
-        <div className="app">
+        <div className="app6">
             <Box sx={{ width: '100%', bgcolor: 'background.paper', borderBottom: 1, borderColor: 'divider' }} style={{marginTop: "5%"}}>
                 <Tabs value={value} onChange={handleChange} centered>
                     <Tab label="SẢN PHẨM MỚI" />

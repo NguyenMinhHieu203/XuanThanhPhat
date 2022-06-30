@@ -1,8 +1,5 @@
-.homePage {
-  text-decoration: none;
-  font-size: 350%;
-  font-weight: bold;
-  color: white;
+.app {
+  margin: -0.2px 0;
 }
 
 .menu {
@@ -10,4 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0.5% 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+  font-size: 120%;
+  padding: 0.2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

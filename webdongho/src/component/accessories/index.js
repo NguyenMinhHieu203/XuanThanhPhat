@@ -13,7 +13,7 @@ function Another() {
         setBackgroundColor("");
     }
     return(
-        <div className="app">
+        <div className="app1">
             <div>
                 <div className="banner1">
                     <p className="text1">MONA SNE<StarBorderIcon className="icon"/>KER</p>
