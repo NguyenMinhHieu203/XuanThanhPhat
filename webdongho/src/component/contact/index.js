@@ -58,10 +58,10 @@ function Contact() {
                     <div className="c1">
                         <p className="title">MẠNG XÃ HỘI</p>
                         <hr className="line"/>
-                        <FacebookIcon className="social"/>
-                        <InstagramIcon className="social"/>
-                        <TwitterIcon className="social"/>
-                        <PinterestIcon className="social"/>
+                        <Link to="/home"><FacebookIcon className="social"/></Link>
+                        <Link to="/home"><InstagramIcon className="social"/></Link>
+                        <Link to="/home"><TwitterIcon className="social"/></Link>
+                        <Link to="/home"><PinterestIcon className="social"/></Link>
                     </div>
                 </div>
                 <hr style={{border: "1px solid red", width: "80%", marginLeft: "10%"}}/>
