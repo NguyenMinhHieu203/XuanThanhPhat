@@ -1,97 +1,184 @@
 {
-    "stores": [
+    "product": [
         {
-            "id": "1",
-            "name": "Html",
-            "price": "1150$",
-            "url_cart": "/Cart/html",
-            "url_todos": "/todos/html",
-            "url_todos_img_left": "https://vietnix.vn/wp-content/uploads/2021/02/html-la-gi.jpg",
-            "url_todos_img_rights": [
-                {
-                    "url_cart": "/Cart/html",
-                    "id": "1",
-                    "name": "Html 1",
-                    "price": "50$",
-                    "url_img_right": "https://resources.stdio.vn/content/article/html-phan-1-co-ban-ve-html/thumbnail-hd/blob-1598602790106@1280x720.jpg"
-                },
-                {
-                    "url_cart": "/Cart/html",
-                    "id": "2",
-                    "name": "Html 2",
-                    "price": "1150$",
-                    "url_img_right": "https://vietnix.vn/wp-content/uploads/2021/07/html-la-gi.webp"
-                },
-                {
-                    "url_cart": "/Cart/html",
-                    "id": "3",
-                    "name": "Html 3",
-                    "price": "1150$",
-                    "url_img_right": "https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/01/pasted-image-0-2.png"
-                },
-                {
-                    "url_cart": "/Cart/html",
-                    "id": "4",
-                    "name": "Html 4",
-                    "price": "1150$",
-                    "url_img_right": "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg"
-                }
-            ]
+            "id": 1,
+            "title": "Converse X Suicidal...",
+            "price": "100,000đ"
         },
         {
-            "id": "2",
-            "name": "CSS",
-            "price": "1250$",
-            "url_cart": "/Cart/css",
-            "url_todos": "/todos/css",
-            "url_todos_img_left": "https://mona.media/wp-content/uploads/2021/07/css.png",
-            "url_todos_img_rights": [
-                {
-                    "url_cart": "/Cart/css",
-                    "id": "1",
-                    "name": "CSS 1",
-                    "price": "1250$",
-                    "url_img_right": "https://mona.media/wp-content/uploads/2021/07/css.png"
-                },
-                {
-                    "url_cart": "/Cart/css",
-                    "id": "2",
-                    "name": "CSS 2",
-                    "price": "1250$",
-                    "url_img_right": "https://images.viblo.asia/61acab5b-2e62-43e9-9617-525bdddb8d54.png"
-                },
-                {
-                    "url_cart": "/Cart/css",
-                    "id": "3",
-                    "name": "CSS 3",
-                    "price": "1250$",
-                    "url_img_right": "https://niithanoi.edu.vn/pic/News/images/tin-tuc-cong-nghe-va-lap-trinh/css-selector-la-gi.jpg"
-                },
-                {
-                    "url_cart": "/Cart/css",
-                    "id": "4",
-                    "name": "CSS 4",
-                    "price": "1250$",
-                    "url_img_right": "https://images.viblo.asia/61acab5b-2e62-43e9-9617-525bdddb8d54.png"
-                }
-            ]
+            "id": 2,
+            "title": "Converse Metal Cons...",
+            "price": "100,000đ"
         },
         {
-            "id": "3",
-            "name": "javascript",
-            "price": "1350$",
-            "url_cart": "/Cart/javascript",
-            "url_todos": "/todos/javascript",
-            "url_todos_img_left": "http://tmnamhai.net/wp-content/uploads/2021/07/et.png",
-            "url_todos_img_rights": [
-                {
-                    "url_cart": "/Cart/javascript",
-                    "id": "1",
-                    "name": "javascript 1",
-                    "price": "1350$",
-                    "url_img_right": "https://thietkewebdalat.net/blog/wp-content/uploads/2020/04/javascript-la-gi.jpg"
-                }
-            ]
+            "id": 3,
+            "title": "Converse Star Chevron...",
+            "price": "100,000đ"
+        },
+        {
+            "id": 4,
+            "title": "Converse Collegiate Te...",
+            "price": "100,000đ"
+        },
+        {
+            "id": 5,
+            "title": "CSport Duffel",
+            "price": "100,000đ"
+        },
+        {
+            "id": 6,
+            "title": "Lil Duffel",
+            "price": "100,000đ"
+        },
+        {
+            "id": 7,
+            "title": "Speed 2 Backpack",
+            "price": "100,000đ"
+        },
+        {
+            "id": 8,
+            "title": "Poly Chuck Plus 1.0",
+            "price": "100,000đ"
+        },
+        {
+            "id": 9,
+            "title": "Chuck Taylor All Star...",
+            "price": "800,000đ"
+        },
+        {
+            "id": 10,
+            "title": "Chuck Taylor All Star...",
+            "price": "900,000đ"
+        },
+        {
+            "id": 11,
+            "title": "Chuck Taylor All Star...",
+            "price": "850,000đ"
+        },
+        {
+            "id": 12,
+            "title": "Chuck Taylor All Star...",
+            "price": "750,000đ"
+        },
+        {
+            "id": 13,
+            "title": "Chuck Taylor All Star...",
+            "price": "750,000đ"
+        },
+        {
+            "id": 14,
+            "title": "Chuck Taylor All Star...",
+            "price": "900,000đ"
+        },
+        {
+            "id": 15,
+            "title": "Chuck 70 Archive Prints",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 16,
+            "title": "Chuck Taylor All Start 70...",
+            "price": "2,100,000đ"
+        },
+        {
+            "id": 17,
+            "title": "Chuck Taylor All Star 70...",
+            "price": "1,900,000đ"
+        },
+        {
+            "id": 18,
+            "title": "Chuck Taylor All Star 70...",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 19,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 20,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 21,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 22,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 23,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 24,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 25,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 26,
+            "title": "Chuck Taylor Classic",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 27,
+            "title": "Chuck 70 Psy-Kicks Ox",
+            "price": "1,800,000đ"
+        },
+        {
+            "id": 28,
+            "title": "Chuck 70 Psy-Kicks Ox",
+            "price": "2,800,000đ"
+        },
+        {
+            "id": 29,
+            "title": "One Star Love The...",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 30,
+            "title": "One Star Love The...",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 31,
+            "title": "One Star Love The...",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 32,
+            "title": "One Star Love The...",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 33,
+            "title": "One Star Sunbaked",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 34,
+            "title": "One Star Sunbaked",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 35,
+            "title": "One Star Sunbaked",
+            "price": "1,250,000đ"
+        },
+        {
+            "id": 36,
+            "title": "One Star Sunbaked",
+            "price": "1,250,000đ"
         }
     ]
 }

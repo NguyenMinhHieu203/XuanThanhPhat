@@ -15,6 +15,7 @@ import News3 from "./Router/news3";
 import News4 from "./Router/news4";
 import News5 from "./Router/news5";
 import News6 from "./Router/news6";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './App.css';
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
       <div className='menu'>
         <Link to="/home" className="link">TRANG CHỦ</Link>
         <Link to="/infor" className="link">GIỚI THIỆU</Link>
-        <Link to="/women" className="link">NỮ</Link>
-        <Link to="/men" className="link">NAM</Link>
+        <Link to="/women" className="dropdown1">NỮ<KeyboardArrowDownIcon /></Link>
+        <Link to="/men" className="dropdown2">NAM<KeyboardArrowDownIcon /></Link>
         <Link to="/child" className="link">TRẺ EM</Link>
         <Link to="/accessories" className="link">PHỤ KIỆN KHÁC</Link>
         <Link to="/news" className="link">TIN TỨC</Link>
