@@ -15,8 +15,19 @@ import News3 from "./Router/news3";
 import News4 from "./Router/news4";
 import News5 from "./Router/news5";
 import News6 from "./Router/news6";
+import Class from "./Router/classic";
+import Sun from "./Router/sunbaked";
+import Chuck from "./Router/chuck07s";
+import Ones from "./Router/onestar";
+import Psyk from "./Router/psy";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './App.css';
+
+const style = {
+  width: '100%',
+  maxWidth: 360,
+  bgcolor: 'background.paper',
+};
 
 function App() {
   return (
@@ -25,8 +36,26 @@ function App() {
       <div className='menu'>
         <Link to="/home" className="link">TRANG CHỦ</Link>
         <Link to="/infor" className="link">GIỚI THIỆU</Link>
-        <Link to="/women" className="dropdown1">NỮ<KeyboardArrowDownIcon /></Link>
-        <Link to="/men" className="dropdown2">NAM<KeyboardArrowDownIcon /></Link>
+        <div class="dropdown">
+          <Link to="/women" class="dropbtn">NỮ<KeyboardArrowDownIcon /></Link>
+          <div class="dropdown-content">
+            <Link to="/women/classic">Classic</Link>
+            <Link to="/women/sunbaked">Sunbaked</Link>
+            <Link to="/women/chuck07s">Chuck 07 s</Link>
+            <Link to="/women/onestar">One Star</Link>
+            <Link to="/women/psykicks">PSY - Kicks</Link>
+          </div>
+        </div>
+        <div class="dropdown">
+          <Link to="/men" class="dropbtn">NAM<KeyboardArrowDownIcon /></Link>
+          <div class="dropdown-content">
+            <Link to="/women/classic">Classic</Link>
+            <Link to="/women/sunbaked">Sunbaked</Link>
+            <Link to="/women/chuck07s">Chuck 07 s</Link>
+            <Link to="/women/onestar">One Star</Link>
+            <Link to="/women/psykicks">PSY - Kicks</Link>
+          </div>
+        </div>
         <Link to="/child" className="link">TRẺ EM</Link>
         <Link to="/accessories" className="link">PHỤ KIỆN KHÁC</Link>
         <Link to="/news" className="link">TIN TỨC</Link>
@@ -38,6 +67,11 @@ function App() {
           <Route path="/home" element={<HomePage />}></Route>
           <Route path="/infor" element={<InforPage />}></Route>
           <Route path="/women" element={<WomenPage />}></Route>
+          <Route path="/women/classic" element={<Class />}></Route>
+          <Route path="/women/sunbaked" element={<Sun />}></Route>
+          <Route path="/women/chuck07s" element={<Chuck />}></Route>
+          <Route path="/women/onestar" element={<Ones />}></Route>
+          <Route path="/women/psykicks" element={<Psyk />}></Route>
           <Route path="/men" element={<MenPage />}></Route>
           <Route path="/child" element={<ChildPage />}></Route>
           <Route path="/accessories" element={<AccessoriesPage />}></Route>

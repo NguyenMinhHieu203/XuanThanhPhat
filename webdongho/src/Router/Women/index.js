@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Typography from '@mui/material/Typography';
-// import Pagination from '@mui/material/Pagination';
-// import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 import image1 from "./images/news-1-150x150.jpg";
 import image2 from "./images/news-2-150x150.jpg";
 import image3 from "./images/news-3-150x150.jpg";
@@ -30,10 +30,10 @@ import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/
 import "./style.css";
 
 function Woman() {
-    // const [page, setPage] = React.useState(1);
-    // const handleChange = (event, value) => {
-    //     setPage(value);
-    // };
+    const [page, setPage] = React.useState(1);
+    const handleChange = (event, value) => {
+        setPage(value);
+    };
     return (
         <>
             <div className="app-6">
@@ -114,7 +114,9 @@ function Woman() {
                 </div>
                 <div className="rightdiv">
                     <div className="rdse">
-                        <p>Hiển thị một kết quả duy nhất</p>
+                        <Stack spacing={2}>
+                            <Typography style={{marginBottom: "9%"}}>Hiển thị kết quả trang số {page}</Typography>
+                        </Stack>
                         <select className="selectmenu">
                             <option>Thứ tự mặc định</option>
                             <option>Mới nhất</option>
@@ -122,7 +124,7 @@ function Woman() {
                             <option>Thứ tự theo giá:cao đến thấp</option>
                         </select>
                     </div>
-                    {/* <div className="producttotal">
+                    <div className="producttotal">
                         <div className="productw1">
                             <div className="productlu">
                                 <img src={product1} className="productimg"></img>
@@ -200,7 +202,7 @@ function Woman() {
                             </div>
                         </div>
                     </div>
-                    <Pagination count={3} page={page} onChange={handleChange} className="pagination"/> */}
+                    <Pagination count={3} page={page} onChange={handleChange} className="pagination" />
                 </div>
             </div>
             <Information />
