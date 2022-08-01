@@ -175,3 +175,9 @@
     width: 200px;
     padding-top: 11%;
 }
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

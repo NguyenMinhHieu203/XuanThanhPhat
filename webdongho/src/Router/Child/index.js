@@ -115,37 +115,37 @@ function Child() {
                         <img src={product1} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">800,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                     <div className="productlu">
                         <img src={product2} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">900,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                     <div className="productlu">
                         <img src={product3} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">850,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                     <div className="productlu">
                         <img src={product4} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">750,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                     <div className="productlu">
                         <img src={product5} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">750,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                     <div className="productlu">
                         <img src={product6} className="productimg"></img>
                         <p className="productp1">Chuck Taylor All Star...</p>
                         <p className="productp2">900,000</p>
-                        <button className="productbtn">THÊM VÀO GIỎ</button>
+                        <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                     </div>
                 </div>
             </div>

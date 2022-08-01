@@ -129,37 +129,37 @@ function Men() {
                                 <img src={product1} className="productimg"></img>
                                 <p className="productp1">Converse X Suicidal...</p>
                                 <p className="productp2">800,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product2} className="productimg"></img>
                                 <p className="productp1">Converse Metal Cons...</p>
                                 <p className="productp2">900,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product3} className="productimg"></img>
                                 <p className="productp1">Converse Star Chevron...</p>
                                 <p className="productp2">850,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product4} className="productimg"></img>
                                 <p className="productp1">Converse Collegiate Te...</p>
                                 <p className="productp2">750,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product5} className="productimg"></img>
                                 <p className="productp1">CSport Duffel</p>
                                 <p className="productp2">750,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product6} className="productimg"></img>
                                 <p className="productp1">Lil Duffel</p>
                                 <p className="productp2">900,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                         <div className="productw1">
@@ -167,37 +167,37 @@ function Men() {
                                 <img src={product7} className="productimg"></img>
                                 <p className="productp1">Speed 2 Backpack</p>
                                 <p className="productp2">800,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product8} className="productimg"></img>
                                 <p className="productp1">Poly Chuck Plus 1.0</p>
                                 <p className="productp2">900,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product9} className="productimg_1"></img>
                                 <p className="productp1">Chuck Taylor All Star...</p>
                                 <p className="productp2">850,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product10} className="productimg_1"></img>
                                 <p className="productp1">Chuck Taylor All Star...</p>
                                 <p className="productp2">750,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product11} className="productimg_1"></img>
                                 <p className="productp1">Chuck Taylor All Star...</p>
                                 <p className="productp2">750,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="productlu">
                                 <img src={product12} className="productimg_1"></img>
                                 <p className="productp1">Chuck Taylor All Star...</p>
                                 <p className="productp2">900,000</p>
-                                <button className="productbtn">THÊM VÀO GIỎ</button>
+                                <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                     </div>
