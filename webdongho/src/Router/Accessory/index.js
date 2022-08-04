@@ -34,35 +34,35 @@ function Accessories() {
                     <div className="menu1">
                         <h6 className="tmenu1">SẢN PHẨM</h6>
                         <div className="m1links">
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/Chuck-Taylor-Classic-1" className="m1link">
                                 <img src={image7} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">Chuck Taylor Classic</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/Chuck-Taylor-Classic-6" className="m1link">
                                 <img src={image8} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">Chuck Taylor Classic</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Love-The-Progress-5" className="m1link">
                                 <img src={image9} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Love The Progress</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Sunbaked-1" className="m1link">
                                 <img src={image10} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Sunbaked</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Sunbaked-2" className="m1link">
                                 <img src={image11} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Sunbaked</p>
@@ -117,37 +117,37 @@ function Accessories() {
                                 <img src={product1} alt="product" className="proimg"></img>
                                 <p className="pprop1">Converse X Suicidal...</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Converse-X-Suicidal-Tendencies-Long" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product2} alt="product" className="proimg"></img>
                                 <p className="pprop1">Converse Metal Cons...</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Converse-Metal-Cons-Pull-Over-Hoodie" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product3} alt="product" className="proimg"></img>
                                 <p className="pprop1">Converse Star Chevron...</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Converse-Star-Chevron-Jogger" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product4} alt="product" className="proimg"></img>
                                 <p className="pprop1">Converse Collegiate Te...</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Converse-Collegiate-Text-SS-Tee" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product5} alt="product" className="proimg"></img>
                                 <p className="pprop1">CSport Duffel</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/CSport-Duffel" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product6} alt="product" className="proimg"></img>
                                 <p className="pprop1">Lil Duffel</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Lil-Duffel" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                         <div className="productro">
@@ -155,13 +155,13 @@ function Accessories() {
                                 <img src={product7} alt="product" className="proimg"></img>
                                 <p className="pprop1">Speed 2 Backpack</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Speed-2-Backpack" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product8} alt="product" className="proimg"></img>
                                 <p className="pprop1">Poly Chuck Plus 1.0</p>
                                 <p className="pprop2">100,000đ</p>
-                                <button className="probtn">THÊM VÀO GIỎ</button>
+                                <button className="probtn"><Link to="/Cart/Poly-Chuck-Plus-1.0" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                     </div>

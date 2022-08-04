@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import "./style.css";
 
@@ -21,7 +22,7 @@ function Another() {
                         <p className="text2">KHUYẾN MÃI</p>
                         <p className="text3">GIẢM GIÁ 50%</p>
                     </div>
-                    <Button style={{color: "white", backgroundColor: `${backgroundColor}`, fontSize: "150%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}>XEM TẤT CẢ</Button>
+                    <Button style={{color: "white", backgroundColor: `${backgroundColor}`, fontSize: "150%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}><Link to="/accessories" style={{textDecoration: 'none', color: 'white'}}>XEM TẤT CẢ</Link></Button>
                 </div>
             </div>
         </div>

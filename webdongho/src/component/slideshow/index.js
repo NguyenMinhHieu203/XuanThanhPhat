@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Zoom } from "react-slideshow-image";
 import { Button } from '@mui/material';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
@@ -13,6 +14,7 @@ import product1 from "./productandtitle/product_block_03.jpg";
 import product2 from "./productandtitle/product_block_05.jpg";
 import product3 from "./productandtitle/product_block_07.jpg";
 import "./style.css";
+import { withTheme } from 'styled-components';
 
 const images = [image1, image2, image3];
 
@@ -94,17 +96,17 @@ function Slide() {
                 <div className="product" onMouseEnter={handleEnterProduct1} onMouseLeave={handleLeaveProduct1}>
                 <img src={title1} alt="title1"></img>
                 <img src={product1} alt="imageShoe1"></img>
-                <Button style={{backgroundColor: "green", color: "white", visibility: `${button1}`}} className="buttonWatch">Xem sản phẩm</Button>
+                <Button style={{backgroundColor: "green", color: "white", visibility: `${button1}`}} className="buttonWatch"><Link to="/men" style={{textDecoration: 'none', color: 'white'}}>Xem sản phẩm</Link></Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct2} onMouseLeave={handleLeaveProduct2}>
                 <img src={title2} alt="title2"></img>
                 <img src={product2} alt="imageShoe2"></img>
-                <Button style={{backgroundColor: "green", color: "white", visibility: `${button2}`}} className="buttonWatch">Xem sản phẩm</Button>
+                <Button style={{backgroundColor: "green", color: "white", visibility: `${button2}`}} className="buttonWatch"><Link to="/women" style={{textDecoration: 'none', color: 'white'}}>Xem sản phẩm</Link></Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct3} onMouseLeave={handleLeaveProduct3}>
                 <img src={title3} alt="title3"></img>
                 <img src={product3} alt="imageShoe3"></img>
-                <Button style={{backgroundColor: "green", color: "white", visibility: `${button3}`}} className="buttonWatch">Xem sản phẩm</Button>
+                <Button style={{backgroundColor: "green", color: "white", visibility: `${button3}`}} className="buttonWatch"><Link to="/child" style={{textDecoration: 'none', color: 'white'}}>Xem sản phẩm</Link></Button>
                 </div>
             </div>
         </div>

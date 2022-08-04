@@ -69,8 +69,8 @@
 }
 
 .v1 {
-    border-left: 3px solid rgb(178,34,34);
-    height: 140px; 
+    border-left: 0.1875em solid rgb(178,34,34);
+    height: 8.75em; 
 }
 
 .r1 {

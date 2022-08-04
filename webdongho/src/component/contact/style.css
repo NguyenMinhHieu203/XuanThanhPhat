@@ -86,13 +86,13 @@
 
 .input {
     width: 15%;
-    height: 36px;
+    height: 2.25em;
 }
 
 .btn {
     background-color: rgb(220,20,60);
     color: white;
-    height: 36px;
+    height: 2.25em;
     display: flex;
     align-items: center;
 }

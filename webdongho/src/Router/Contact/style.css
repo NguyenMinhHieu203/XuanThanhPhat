@@ -20,11 +20,11 @@
 }
 
 .l3 {
-    margin-right: 25px;
+    margin-right: 1.5625em;
 }
 
 .l4 {
-    margin-left: 25px;
+    margin-left: 1.5625em;
 }
 
 .text {
@@ -82,12 +82,12 @@
     width: 48%;
     margin-right: 2%;
     margin-bottom: 2%;
-    height: 35px;
+    height: 2.1875em;
 }
 
 .input2 {
     width: 98%;
-    height: 90px;
+    height: 5.625em;
     margin-bottom: 2%;
     text-align: left;
 }
@@ -95,7 +95,7 @@
 .buttonSend {
     margin: 0 30%;
     width: 38%;
-    height: 35px;
+    height: 2.1875em;
     background-color: rgb(178,34,34);
     color: white;
     font-weight: bold;

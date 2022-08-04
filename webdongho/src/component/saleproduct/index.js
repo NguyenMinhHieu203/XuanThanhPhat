@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import image1 from "./sale/T-shirt-300x225.jpg";
 import image2 from "./sale/T-shirt-1-300x225.jpg";
 import image3 from "./sale/T-shirt-2-300x225.jpg";
@@ -96,37 +97,49 @@ function Sale() {
                     <img src={image2} alt="product"></img>
                     <p>Converse X Suicidal Tendencies Long</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button1}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button1}`}}>
+                        <Link to="/Cart/Converse-X-Suicidal-Tendencies-Long" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct2} onMouseLeave={handleLeaveProduct2}>
                     <img src={image3} alt="product"></img>
                     <p>Converse Metal Cons Pull Over Hoodie</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button2}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button2}`}}>
+                        <Link to="/Cart/Converse-Metal-Cons-Pull-Over-Hoodie" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct3} onMouseLeave={handleLeaveProduct3}>
                     <img src={image4} alt="product"></img>
                     <p>Converse Star Chevron Jogger</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button3}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button3}`}}>
+                        <Link to="/Cart/Converse-Star-Chevron-Jogger" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct4} onMouseLeave={handleLeaveProduct4}>
                     <img src={image1} alt="product"></img>
                     <p>Converse Collegiate Text SS Tee</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button4}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button4}`}}>
+                        <Link to="/Cart/Converse-Collegiate-Text-SS-Tee" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct5} onMouseLeave={handleLeaveProduct5}>
                     <img src={image5} alt="product"></img>
                     <p>CSport Duffel</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button5}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button5}`}}>
+                        <Link to="/Cart/CSport-Duffel" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct6} onMouseLeave={handleLeaveProduct6}>
                     <img src={image6} alt="product"></img>
                     <p>Lil Duffel</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button6}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button6}`}}>
+                        <Link to="/Cart/Lil-Duffel" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
             </div>
             <div className="partTwo">
@@ -134,16 +147,20 @@ function Sale() {
                     <img src={image7} alt="product"></img>
                     <p>Speed 2 Backpack</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button7}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button7}`}}>
+                        <Link to="/Cart/Speed-2-Backpack" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
                 <div className="product" onMouseEnter={handleEnterProduct8} onMouseLeave={handleLeaveProduct8}>
                     <img src={image9} alt="product"></img>
                     <p>Poly Chuck Plus 1.0</p>
                     <p style={{color: "red"}}>100,000đ</p>
-                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button8}`}}>Thêm vào giỏ</Button>
+                    <Button style={{backgroundColor: "red", color: "white", fontWeight: "bold", visibility: `${button8}`}}>
+                        <Link to="/Cart/Poly-Chuck-Plus-1.0" style={{textDecoration: 'none', color: 'white'}}>THÊM VÀO GIỎ</Link>
+                    </Button>
                 </div>
             </div>
-            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%", marginTop: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}>XEM TẤT CẢ</Button>
+            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%", marginTop: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}><Link to="/accessories" style={{textDecoration: 'none', color: 'white'}}>XEM TẤT CẢ</Link></Button>
         </div>
     );
 }

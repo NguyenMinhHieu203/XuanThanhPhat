@@ -30,35 +30,35 @@ function Onestar() {
                     <div className="menu1">
                         <h6 className="tmenu1">SẢN PHẨM</h6>
                         <div className="m1links">
-                            <Link to="*" className="m1link">
+                        <Link to="/Cart/Chuck-Taylor-Classic-1" className="m1link">
                                 <img src={image7} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">Chuck Taylor Classic</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/Chuck-Taylor-Classic-6" className="m1link">
                                 <img src={image8} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">Chuck Taylor Classic</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Love-The-Progress-5" className="m1link">
                                 <img src={image9} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Love The Progress</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Sunbaked-1" className="m1link">
                                 <img src={image10} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Sunbaked</p>
                                     <p className="m1p2">1,250,000đ</p>
                                 </div>
                             </Link>
-                            <Link to="*" className="m1link">
+                            <Link to="/Cart/One-Star-Sunbaked-2" className="m1link">
                                 <img src={image11} alt="image" className="m1img"></img>
                                 <div>
                                     <p className="m1p1">One Star Sunbaked</p>
@@ -112,7 +112,7 @@ function Onestar() {
                             <img src={product1} className="productimg"></img>
                             <p className="productp1">One Star Love The...</p>
                             <p className="productp2">1,250,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/One-Star-Love-The-Progress-5" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                         <div className="productlu">
                             <img src={product2} className="productimg"></img>

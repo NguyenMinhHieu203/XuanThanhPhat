@@ -1,5 +1,5 @@
 .app7 {
-    padding-top: 0.2px;
+    padding-top: 0.0125em;
 }
 
 .header {
@@ -33,13 +33,13 @@
 
 .field1 {
     width: 80%;
-    border: 1px solid green;
+    border: 0.0625em solid green;
     margin-bottom: 3%;
 }
 
 .field2 {
     width: 80%;
-    border: 1px solid green;
+    border: 0.0625em solid green;
 }
 .shopName {
     display: flex;

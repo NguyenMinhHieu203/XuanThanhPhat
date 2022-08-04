@@ -5,7 +5,26 @@ import InforPage from './Router/Introduce';
 import MenPage from './Router/Men';
 import WomenPage from './Router/Women';
 import ChildPage from './Router/Child';
+import ChildShoe1 from './Router/ChildSlideShow/product1';
+import ChildShoe2 from './Router/ChildSlideShow/product2';
+import ChildShoe3 from './Router/ChildSlideShow/product3';
+import ChildShoe4 from './Router/ChildSlideShow/product4';
+import ChildShoe5 from './Router/ChildSlideShow/product5';
+import ChildShoe6 from './Router/ChildSlideShow/product6';
+import ProductShoes1 from './Router/ProductShow/shoes1';
+import ProductShoes2 from './Router/ProductShow/shoes2';
+import ProductShoes3 from './Router/ProductShow/shoes3';
+import ProductShoes4 from './Router/ProductShow/shoes4';
+import ProductShoes5 from './Router/ProductShow/shoes5';
 import AccessoriesPage from './Router/Accessory';
+import Accesories1 from './Router/AccessorySlideShow/product1';
+import Accesories2 from './Router/AccessorySlideShow/product2';
+import Accesories3 from './Router/AccessorySlideShow/product3';
+import Accesories4 from './Router/AccessorySlideShow/product4';
+import Accesories5 from './Router/AccessorySlideShow/product5';
+import Accesories6 from './Router/AccessorySlideShow/product6';
+import Accesories7 from './Router/AccessorySlideShow/product7';
+import Accesories8 from './Router/AccessorySlideShow/product8';
 import NewsPage from './Router/News';
 import ContactPage from './Router/Contact';
 import Title from "./component/title";
@@ -74,8 +93,27 @@ function App() {
           <Route path="/women/psykicks" element={<Psyk />}></Route>
           <Route path="/men" element={<MenPage />}></Route>
           <Route path="/child" element={<ChildPage />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Creatures-Boston-x-London-Transport" element={<ChildShoe1 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Boston-x-London-Transport" element={<ChildShoe2 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Gaming-Camo" element={<ChildShoe3 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals" element={<ChildShoe4 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals-2" element={<ChildShoe5 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Watermelon" element={<ChildShoe6 />}></Route>
           <Route path="/accessories" element={<AccessoriesPage />}></Route>
+          <Route path="/Cart/Converse-X-Suicidal-Tendencies-Long" element={<Accesories1 />}></Route>
+          <Route path="/Cart/Converse-Metal-Cons-Pull-Over-Hoodie" element={<Accesories2 />}></Route>
+          <Route path="/Cart/Converse-Star-Chevron-Jogger" element={<Accesories3 />}></Route>
+          <Route path="/Cart/Converse-Collegiate-Text-SS-Tee" element={<Accesories4 />}></Route>
+          <Route path="/Cart/CSport-Duffel" element={<Accesories5 />}></Route>
+          <Route path="/Cart/Lil-Duffel" element={<Accesories6 />}></Route>
+          <Route path="/Cart/Speed-2-Backpack" element={<Accesories7 />}></Route>
+          <Route path="/Cart/Poly-Chuck-Plus-1.0" element={<Accesories8 />}></Route>
           <Route path="/news" element={<NewsPage />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-1" element={<ProductShoes1/>}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-6" element={<ProductShoes2/>}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-5" element={<ProductShoes3 />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-1" element={<ProductShoes4 />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-2" element={<ProductShoes5 />}></Route>
           <Route path="news-1" element={<News1 />}></Route>
           <Route path="news-2" element={<News2 />}></Route>
           <Route path="news-3" element={<News3 />}></Route>

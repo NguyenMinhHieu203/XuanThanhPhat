@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Zoom } from "react-slideshow-image";
+import { Link } from 'react-router-dom';
 import product1 from "./products/women-classic-1.jpg";
 import product2 from "./products/women-classic-2.jpg";
 import product3 from "./products/women-classic-3.jpg";
@@ -272,7 +273,9 @@ function Product() {
                             <img key={0} style={{ width: "50%" }} src={products1[0]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button1}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button1}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-1" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct2} onMouseLeave={handleLeaveProduct2}>
                             <img key={1} style={{ width: "50%" }} src={products1[1]} />
@@ -304,7 +307,9 @@ function Product() {
                             <img key={5} style={{ width: "50%" }} src={products1[5]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button6}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button6}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-6" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct7} onMouseLeave={handleLeaveProduct7}>
                             <img key={6} style={{ width: "50%" }} src={products1[6]} />
@@ -330,7 +335,9 @@ function Product() {
                             <img key={0} style={{ width: "50%" }} src={products2[0]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button9}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button9}`}}>
+                                <Link to="/Cart/One-Star-Love-The-Progress-5" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct10} onMouseLeave={handleLeaveProduct10}>
                             <img key={1} style={{ width: "50%" }} src={products2[1]} />
@@ -356,13 +363,17 @@ function Product() {
                             <img key={4} style={{ width: "50%" }} src={products2[4]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button13}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button13}`}}>
+                                <Link to="/Cart/One-Star-Sunbaked-1" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct14} onMouseLeave={handleLeaveProduct14}>
                             <img key={5} style={{ width: "50%" }} src={products2[5]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button14}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button14}`}}>
+                                <Link to="/Cart/One-Star-Sunbaked-2" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct15} onMouseLeave={handleLeaveProduct15}>
                             <img key={6} style={{ width: "50%" }} src={products2[6]} />
