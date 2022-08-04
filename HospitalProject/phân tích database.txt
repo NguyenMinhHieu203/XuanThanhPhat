@@ -1,0 +1,23 @@
+* Bệnh nhân
+- Thông tin bệnh nhân:
++ Mã bệnh nhân
++ Họ tên
++ Ngày sinh
++ Giới tính
++ Số điện thoại
+
+- Thông tin liên lạc:
++ Địa chỉ
++ Tỉnh/ Huyện/ Phường, xã
++ CMT/CCCD
++ Tên người liên hệ
+
+* Dịch vụ
+- Danh sách dịch vụ
+- Danh sách phòng khám
+- Lý do
+
+--> Tạo một array lớn chứa danh sách bệnh nhân bao gồm:
+- Thông tin bệnh nhân và thông tin liên lạc.
+Tạo một array nằm trong array trên chứa danh sách dịch vụ, đối tượng, lý do, mã hóa đơn, ngày khám.
+Tạo một array khác chứa kết quả và kết luận của bác sĩ.

@@ -129,25 +129,25 @@ function Classic() {
                                 <img src={product3} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-3" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product4} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-4" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product5} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-5" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product6} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-2" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                         <div className="productro">
@@ -155,13 +155,13 @@ function Classic() {
                                 <img src={product7} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-7" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                             <div className="prorow">
                                 <img src={product8} alt="product" className="proimg"></img>
                                 <p className="pprop1">Chuck Taylor Classic</p>
                                 <p className="pprop2">1,250,000</p>
-                                <button className="probtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                                <button className="probtn"><Link to="/Cart/Chuck-Taylor-Classic-8" className="btn-link">THÊM VÀO GIỎ</Link></button>
                             </div>
                         </div>
                     </div>

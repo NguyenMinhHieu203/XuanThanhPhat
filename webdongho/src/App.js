@@ -35,7 +35,15 @@ import News4 from "./Router/news4";
 import News5 from "./Router/news5";
 import News6 from "./Router/news6";
 import Class from "./Router/classic";
+import Class1 from "./Router/ClassicDetails/product3";
+import Class2 from "./Router/ClassicDetails/product4";
+import Class3 from "./Router/ClassicDetails/product5";
+import Class4 from "./Router/ClassicDetails/product2";
+import Class5 from "./Router/ClassicDetails/product7";
+import Class6 from "./Router/ClassicDetails/product8";
 import Sun from "./Router/sunbaked";
+import Sun1 from "./Router/SunbakedDetails/product3";
+import Sun2 from "./Router/SunbakedDetails/product4";
 import Chuck from "./Router/chuck07s";
 import Ones from "./Router/onestar";
 import Psyk from "./Router/psy";
@@ -87,7 +95,15 @@ function App() {
           <Route path="/infor" element={<InforPage />}></Route>
           <Route path="/women" element={<WomenPage />}></Route>
           <Route path="/women/classic" element={<Class />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-3" element={<Class1 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-4" element={<Class2 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-5" element={<Class3 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-2" element={<Class4 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-7" element={<Class5 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-8" element={<Class6 />}></Route>
           <Route path="/women/sunbaked" element={<Sun />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-3" element={<Sun1 />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-4" element={<Sun2 />}></Route>
           <Route path="/women/chuck07s" element={<Chuck />}></Route>
           <Route path="/women/onestar" element={<Ones />}></Route>
           <Route path="/women/psykicks" element={<Psyk />}></Route>

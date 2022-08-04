@@ -1,0 +1,8 @@
+Tìm hiểu grid wrap css để menu tự động xuống dòng khi màn hình bị thu nhỏ.
+(Bootstrap Gird hoặc Grid system của React-Bootstrap)
+
+Api VietNam province:
+https://provinces.open-api.vn/#:~:text=API%20HTTP%20cho%20ph%C3%A9p%20l%E1%BA%A5y,d%E1%BB%A5ng%20c%E1%BB%A7a%20th%C6%B0%20vi%E1%BB%87n%20VietnamProvinces.&text=L%C6%B0u%20%C3%BD%3A%20Hi%E1%BB%87n%20t%E1%BA%A1i%20l%C6%B0%E1%BB%A3ng,b%E1%BB%8B%20Vercel%20kh%C3%B3a%20t%C3%A0i%20kho%E1%BA%A3n.
+
+Cân nhắc sử dụng dropdown của react-bootstrap
+https://react-bootstrap.netlify.app/components/dropdowns/
