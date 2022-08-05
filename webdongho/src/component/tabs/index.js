@@ -281,19 +281,25 @@ function Product() {
                             <img key={1} style={{ width: "50%" }} src={products1[1]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button2}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button2}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-6" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct3} onMouseLeave={handleLeaveProduct3}>
                             <img key={2} style={{ width: "50%" }} src={products1[2]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button3}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button3}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-3" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct4} onMouseLeave={handleLeaveProduct4}>
                             <img key={3} style={{ width: "50%" }} src={products1[3]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button4}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button4}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-4" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         </div>
                         <div className="tab">
@@ -301,27 +307,33 @@ function Product() {
                             <img key={4} style={{ width: "50%" }} src={products1[4]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button5}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button5}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-5" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct6} onMouseLeave={handleLeaveProduct6}>
                             <img key={5} style={{ width: "50%" }} src={products1[5]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
                             <Button style={{backgroundColor: "red", color: "white", visibility: `${button6}`}}>
-                                <Link to="/Cart/Chuck-Taylor-Classic-6" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                                <Link to="/Cart/Chuck-Taylor-Classic-2" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
                             </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct7} onMouseLeave={handleLeaveProduct7}>
                             <img key={6} style={{ width: "50%" }} src={products1[6]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button7}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button7}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-7" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct8} onMouseLeave={handleLeaveProduct8}>
                             <img key={7} style={{ width: "50%" }} src={products1[7]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button8}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button8}`}}>
+                                <Link to="/Cart/Chuck-Taylor-Classic-8" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         </div>
                     </Zoom>
@@ -343,19 +355,25 @@ function Product() {
                             <img key={1} style={{ width: "50%" }} src={products2[1]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button10}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button10}`}}>
+                                <Link to="/Cart/One-Star-Love-The-Progress-6" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct11} onMouseLeave={handleLeaveProduct11}>
                             <img key={2} style={{ width: "50%" }} src={products2[2]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button11}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button11}`}}>
+                                <Link to="/Cart/One-Star-Love-The-Progress-7" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct12} onMouseLeave={handleLeaveProduct12}>
                             <img key={3} style={{ width: "50%" }} src={products2[3]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button12}`}}>Xem sản phẩm</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button12}`}}>
+                                <Link to="/Cart/One-Star-Love-The-Progress-8" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         </div>
                         <div className="tab">
@@ -379,13 +397,17 @@ function Product() {
                             <img key={6} style={{ width: "50%" }} src={products2[6]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button15}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button15}`}}>
+                            <Link to="/Cart/One-Star-Sunbaked-3" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         <div className="shoe1" onMouseEnter={handleEnterProduct16} onMouseLeave={handleLeaveProduct16}>
                             <img key={7} style={{ width: "50%" }} src={products2[7]} />
                             <p className="nameShoe1">Chuck Taylor Classic</p>
                             <p className="priceShoe1">1,250,000đ</p>
-                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button16}`}}>Thêm vào giỏ</Button>
+                            <Button style={{backgroundColor: "red", color: "white", visibility: `${button16}`}}>
+                                <Link to="/Cart/One-Star-Sunbaked-4" style={{textDecoration: 'none', color: 'white'}}>Thêm vào giỏ</Link>
+                            </Button>
                         </div>
                         </div>
                     </Zoom>

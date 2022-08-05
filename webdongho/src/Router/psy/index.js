@@ -110,13 +110,13 @@ function PsyKick() {
                             <img src={product1} className="productimg"></img>
                             <p className="productp1">One Star Sunbaked</p>
                             <p className="productp2">1,800,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/Chuck-70-Psy-Kicks-Ox-1" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                         <div className="productlu">
                             <img src={product2} className="productimg"></img>
                             <p className="productp1">One Star Sunbaked</p>
                             <p className="productp2">2,800,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/Chuck-70-Psy-Kicks-Ox-2" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                     </div>
                 </div>

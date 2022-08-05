@@ -7,6 +7,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import "./style.css";
 
 function Title() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordConfirmation, setPasswordConfirmation] = useState("");
     // Kích hoạt signin box
     const [openSignIn, setOpenSignIn] = useState(false);
     const handleSignIn = () => {
@@ -102,11 +105,11 @@ function Title() {
                     </div>
                     <div class="modal-body">
                         <p className="content">Địa chỉ Email *</p>
-                        <input type="email" placeholder="Nhập email" className="field1"/>
+                        <input type="email" placeholder="Nhập email" className="field1" onChange={(e) => setEmail(e.target.value)}/>
                         <p className="content">Mật khẩu *</p>
-                        <input type="password" placeholder="Nhập mật khẩu" className="field1"/>
+                        <input type="password" placeholder="Nhập mật khẩu" className="field1" onChange={(e) => setPassword(e.target.value)}/>
                         <p className="content">Nhập lại mật khẩu *</p>
-                        <input type="password" placeholder="Nhập mật khẩu" className="field2"/>
+                        <input type="password" placeholder="Nhập mật khẩu" className="field2" onChange={(e) => setPasswordConfirmation(e.target.value)}/>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary">ĐĂNG KÝ</button>

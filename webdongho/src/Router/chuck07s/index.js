@@ -113,25 +113,25 @@ function Chuck07s() {
                             <img src={product1} className="productimg"></img>
                             <p className="productp1">Chuck 70 Archive Prints</p>
                             <p className="productp2">1,250,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/Chuck-70-Archive-Prints" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                         <div className="productlu">
                             <img src={product2} className="productimg"></img>
                             <p className="productp1">Chuck Taylor All Star 70...</p>
                             <p className="productp2">2,100,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
-                        </div>
-                        <div className="productlu">
-                            <img src={product3} className="productimg"></img>
-                            <p className="productp1">Chuck Taylor All Star 70...</p>
-                            <p className="productp2">1,900,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/Chuck-Taylor-All-Star-70-Full-Gator" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                         <div className="productlu">
                             <img src={product4} className="productimg"></img>
                             <p className="productp1">Chuck Taylor All Star 70...</p>
+                            <p className="productp2">1,900,000</p>
+                            <button className="productbtn"><Link to="/Cart/Chuck-Taylor-All-Star-70-Pastel-Leather" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                        </div>
+                        <div className="productlu">
+                            <img src={product3} className="productimg"></img>
+                            <p className="productp1">Chuck Taylor All Star 70...</p>
                             <p className="productp2">1,250,000</p>
-                            <button className="productbtn"><Link to="*" className="btn-link">THÊM VÀO GIỎ</Link></button>
+                            <button className="productbtn"><Link to="/Cart/Chuck-Taylor-All-Star-70-Poplin-Shirt" className="btn-link">THÊM VÀO GIỎ</Link></button>
                         </div>
                     </div>
                 </div>

@@ -45,16 +45,19 @@ import Sun from "./Router/sunbaked";
 import Sun1 from "./Router/SunbakedDetails/product3";
 import Sun2 from "./Router/SunbakedDetails/product4";
 import Chuck from "./Router/chuck07s";
+import Chuck1 from "./Router/Chuck07sDetails/product1";
+import Chuck2 from "./Router/Chuck07sDetails/product2";
+import Chuck3 from "./Router/Chuck07sDetails/product3";
+import Chuck4 from "./Router/Chuck07sDetails/product4";
 import Ones from "./Router/onestar";
+import One1 from "./Router/OneStarDetails/product2";
+import One2 from "./Router/OneStarDetails/product3";
+import One3 from "./Router/OneStarDetails/product4";
 import Psyk from "./Router/psy";
+import Psy1 from "./Router/PSYDetails/product1";
+import Psy2 from "./Router/PSYDetails/product2";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './App.css';
-
-const style = {
-  width: '100%',
-  maxWidth: 360,
-  bgcolor: 'background.paper',
-};
 
 function App() {
   return (
@@ -105,8 +108,17 @@ function App() {
           <Route path="/Cart/One-Star-Sunbaked-3" element={<Sun1 />}></Route>
           <Route path="/Cart/One-Star-Sunbaked-4" element={<Sun2 />}></Route>
           <Route path="/women/chuck07s" element={<Chuck />}></Route>
+          <Route path="/Cart/Chuck-70-Archive-Prints" element={<Chuck1 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Full-Gator" element={<Chuck2 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Pastel-Leather" element={<Chuck3 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Poplin-Shirt" element={<Chuck4 />}></Route>
           <Route path="/women/onestar" element={<Ones />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-6" element={<One1 />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-7" element={<One2 />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-8" element={<One3 />}></Route>
           <Route path="/women/psykicks" element={<Psyk />}></Route>
+          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-1" element={<Psy1 />}></Route>
+          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-2" element={<Psy2 />}></Route>
           <Route path="/men" element={<MenPage />}></Route>
           <Route path="/child" element={<ChildPage />}></Route>
           <Route path="/Cart/Chuck-Taylor-All-Star-Creatures-Boston-x-London-Transport" element={<ChildShoe1 />}></Route>
