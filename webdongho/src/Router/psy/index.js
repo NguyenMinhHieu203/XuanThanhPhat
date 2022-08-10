@@ -13,7 +13,7 @@ import image10 from "./images/women-onestar-4.jpg";
 import image11 from "./images/women-sunbaked-2.jpg";
 import product1 from "./images/men-psy-1-600x384.jpg";
 import product2 from "./images/women-psy-2-600x384.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function PsyKick() {

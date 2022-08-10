@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from 'react';
+import axios from "axios";
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
@@ -7,9 +8,61 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import "./style.css";
 
 function Title() {
+    // Lấy ra thông tin người dùng 
+    const [user, setUser] = useState([]);
+    useEffect(() => {
+        axios.get("http://localhost:3000/user").then((res) => setUser(res.data));
+    }, [user]);
+
+    // Validation đăng nhập
+    const signInUser = () => {
+        let check = false;
+        let i = 0;
+        while(i < user.length) {
+            if(emailSignIn === user[i].email && passwordSignIn === user[i].password) {
+                setTextSignIn(user[i].email);
+                handleCloseSignIn();
+                check = true;
+                break;
+            }
+            ++i;
+        }
+        if(check === true) {
+            alert("Đăng nhập thành công");
+        }
+        else {
+            alert("Tài khoản hoặc mật khẩu không đúng");
+        }
+    }
+
+    // Lấy ra giá trị người dùng nhập vào form đăng kí
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
+    // Đẩy thông tin người dùng lên database
+    const signUpUser = () => {
+        if(email !== "" && password !== "" && passwordConfirmation !== "") {
+            if(passwordConfirmation !== password) {
+                alert("Mật khẩu không khớp");
+            }
+            else {
+                const data = {
+                    email: email,
+                    password: password
+                }
+                axios.post("http://localhost:3000/user", data).then((res) => alert("Đăng ký thành công"), handleCloseSignUp(), handleCloseSignIn());
+            }
+        } 
+        else {
+            alert("Vui lòng nhập đầy đủ thông tin");
+        }
+    }
+
+    // Set email và password người dùng sử dụng để đăng nhập
+    const [textSignIn, setTextSignIn] = useState("Đăng nhập");
+    const [emailSignIn, setEmailSignIn] = useState("");
+    const [passwordSignIn, setPasswordSignIn] = useState("");
     // Kích hoạt signin box
     const [openSignIn, setOpenSignIn] = useState(false);
     const handleSignIn = () => {
@@ -59,7 +112,7 @@ function Title() {
     return(
         <div className="app7">
             <div className='header'>
-            <Button onClick={handleSignIn} className="signIn">Đăng nhập</Button>
+            <Button onClick={handleSignIn} className="signIn">{textSignIn}</Button>
             <div className='shopName'>
             <div>MONA</div>
             <div>S N E<StarBorderIcon style={{fontSize: "100%", marginBottom: "5%"}} />K E R</div>
@@ -80,14 +133,14 @@ function Title() {
                     </div>
                     <div class="modal-body">
                         <p className="content">Địa chỉ Email *</p>
-                        <input type="email" placeholder="Nhập email" className="field1"/>
+                        <input type="email" placeholder="Nhập email" className="field1" value={emailSignIn} onChange={(e) => setEmailSignIn(e.target.value)}/>
                         <p className="content">Mật khẩu *</p>
-                        <input type="password" placeholder="Nhập mật khẩu" className="field2"/>
+                        <input type="password" placeholder="Nhập mật khẩu" className="field2" value={passwordSignIn} onChange={(e) => setPasswordSignIn(e.target.value)}/>
                     </div>
                     <div class="modal-footer">
                         <button onClick={handleSignUp} onMouseEnter={handleEnterSignUp} onMouseLeave={handleLeaveSignUp} type="button" style={{color: `${signUpColor}`, backgroundColor: "white", border: "none", fontWeight: "bold"}} className="signUp">Đăng ký</button>
                         <button onClick={handleCloseSignIn} type="button" data-bs-dismiss="modal" style={{border: "none", backgroundColor: "white", color: "rgb(30,144,255)"}} >Quên mật khẩu</button>
-                        <button type="button" class="btn btn-primary">ĐĂNG NHẬP</button>
+                        <button type="button" class="btn btn-primary" onClick={signInUser}>ĐĂNG NHẬP</button>
                     </div>
                     </div>
                 </div>
@@ -112,7 +165,7 @@ function Title() {
                         <input type="password" placeholder="Nhập mật khẩu" className="field2" onChange={(e) => setPasswordConfirmation(e.target.value)}/>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">ĐĂNG KÝ</button>
+                        <button type="button" class="btn btn-primary" onClick={signUpUser}>ĐĂNG KÝ</button>
                     </div>
                     </div>
                 </div>

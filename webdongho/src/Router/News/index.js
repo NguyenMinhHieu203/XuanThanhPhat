@@ -13,7 +13,7 @@ import image10 from "./images/news-4-300x200.jpg";
 import image11 from "./images/news-5-300x203.png";
 import image12 from "./images/news-6.jpg";
 import SearchIcon from '@mui/icons-material/Search';
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function News() {

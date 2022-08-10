@@ -57,6 +57,7 @@ import Psyk from "./Router/psy";
 import Psy1 from "./Router/PSYDetails/product1";
 import Psy2 from "./Router/PSYDetails/product2";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ViewCart from "./Router/ViewCart";
 import './App.css';
 
 function App() {
@@ -148,6 +149,7 @@ function App() {
           <Route path="news-4" element={<News4 />}></Route>
           <Route path="news-5" element={<News5 />}></Route>
           <Route path="news-6" element={<News6 />}></Route>
+          <Route path="/viewcart" element={<ViewCart />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
         </Routes>
       </div>

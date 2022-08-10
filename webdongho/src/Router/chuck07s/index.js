@@ -15,7 +15,7 @@ import product1 from "./images/women-chuck-07-300x225.jpg";
 import product2 from "./images/women-chuck-07-1-300x225.jpg";
 import product3 from "./images/women-chuck-07-2-300x225.jpg";
 import product4 from "./images/women-chuck-07-3-300x225.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 

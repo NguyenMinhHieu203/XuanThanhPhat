@@ -19,7 +19,7 @@ import product5 from "./images/women-classic-5.jpg";
 import product6 from "./images/women-classic-6.jpg";
 import product7 from "./images/women-classic-7.jpg";
 import product8 from "./images/women-classic-8.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function Classic() {

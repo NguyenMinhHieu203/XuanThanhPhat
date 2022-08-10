@@ -17,7 +17,7 @@ import product3 from "./images/kid-3-600x384.jpg";
 import product4 from "./images/kid-4-600x384.jpg";
 import product5 from "./images/kid-5-600x384.jpg";
 import product6 from "./images/kid-6-600x384.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 

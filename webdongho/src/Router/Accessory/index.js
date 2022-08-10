@@ -19,7 +19,7 @@ import product5 from "./images/balo-1-300x225.jpg";
 import product6 from "./images/balo-2-300x225.jpg";
 import product7 from "./images/balo-3-300x225.jpg";
 import product8 from "./images/balo-4-300x225.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function Accessories() {

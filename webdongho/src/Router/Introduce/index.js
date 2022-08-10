@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from "./images/03306320213d3356ce875921ff197762.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function Introduce() {

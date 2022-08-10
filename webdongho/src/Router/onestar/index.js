@@ -15,7 +15,7 @@ import product1 from "./images/women-onestar-1-600x384.jpg";
 import product2 from "./images/women-onestar-2-300x225.jpg";
 import product3 from "./images/women-onestar-3-600x384.jpg";
 import product4 from "./images/women-onestar-4-600x384.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function Onestar() {

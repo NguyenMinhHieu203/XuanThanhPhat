@@ -26,7 +26,7 @@ import product9 from "./images/kid-1-600x384.jpg";
 import product10 from "./images/kid-2-600x384.jpg";
 import product11 from "./images/kid-3-600x384.jpg";
 import product12 from "./images/kid-4-600x384.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 function Men() {
     const [page, setPage] = React.useState(1);

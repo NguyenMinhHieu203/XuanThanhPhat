@@ -70,14 +70,14 @@
     position: absolute;
     left: 72%;
     top: 10%;
-    z-index: 7;
+    z-index: 2;
 }
   
 .modalBasket {
     position: absolute;
     left: 72%;
     top: 10%;
-    z-index: 7;
+    z-index: 2;
 }
 
   

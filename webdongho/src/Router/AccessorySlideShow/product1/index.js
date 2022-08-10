@@ -31,7 +31,7 @@ import banking3 from "./images/logo-vib.jpg";
 import banking4 from "./images/logo-vcb.jpg";
 import banking5 from "./images/logo-paypal.jpg";
 import banking6 from "./images/logo-mastercard.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../../component/contact";
 import "./style.css";
 
 const slide1 = [cshoe1, cshoe4, cshoe2, cshoe3, cshoe5];
@@ -181,7 +181,7 @@ function Jacket1() {
                             <div className="amount-number">{number}</div>
                             <button onClick={handleIncrease} className="btn-incre">+</button>
                         </div>
-                        <Button style={{ color: "white", backgroundColor: "rgb(178,34,34)", fontWeight: "bold" }}><Link to="*" style={{ textDecoration: "none", color: "white" }}>THÊM VÀO GIỎ</Link></Button>
+                        <Button style={{ color: "white", backgroundColor: "rgb(178,34,34)", fontWeight: "bold" }}><Link to="/viewcart" style={{ textDecoration: "none", color: "white" }}>THÊM VÀO GIỎ</Link></Button>
                     </div>
                     <div>
                         <div className="payment">

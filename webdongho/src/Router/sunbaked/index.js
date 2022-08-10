@@ -15,7 +15,7 @@ import product1 from "./images/women-sunbaked-1.jpg";
 import product2 from "./images/women-sunbaked-2.jpg";
 import product3 from "./images/women-sunbaked-3.jpg";
 import product4 from "./images/women-sunbaked-4.jpg";
-import Information from "D:/XuanThanhPhat/XuanThanhPhat/webdongho/src/component/contact";
+import Information from "../../component/contact";
 import "./style.css";
 
 function Sunbaked() {
