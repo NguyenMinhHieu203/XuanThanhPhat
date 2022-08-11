@@ -15,6 +15,7 @@
 .slide-shoeshow {
     width: 35%;
     margin-right: 10%;
+    z-index: 1;
 }
 
 .slide-images {
