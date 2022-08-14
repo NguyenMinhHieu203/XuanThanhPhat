@@ -11,7 +11,7 @@ function Title() {
     // Lấy ra thông tin người dùng 
     const [user, setUser] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:3000/user").then((res) => setUser(res.data));
+        axios.get("http://localhost:4020/user").then((res) => setUser(res.data));
     }, [user]);
 
     // Validation đăng nhập
@@ -51,7 +51,7 @@ function Title() {
                     email: email,
                     password: password
                 }
-                axios.post("http://localhost:3000/user", data).then((res) => alert("Đăng ký thành công"), handleCloseSignUp(), handleCloseSignIn());
+                axios.post("http://localhost:4020/user", data).then((res) => alert("Đăng ký thành công"), handleCloseSignUp(), handleCloseSignIn());
             }
         } 
         else {
