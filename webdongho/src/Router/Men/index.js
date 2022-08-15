@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
@@ -29,6 +29,11 @@ import product12 from "./images/kid-4-600x384.jpg";
 import Information from "../../component/contact";
 import "./style.css";
 function Men() {
+    // Tự động scroll khi chuyển trang
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
     const [page, setPage] = React.useState(1);
     const handleChange = (event, value) => {
         setPage(value);

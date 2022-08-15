@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -116,6 +116,11 @@ const labels = {
 };
 
 function Psy1() {
+    // Tự động scroll khi chuyển trang
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
     // Chuyển tab
     const [value, setValue] = React.useState(0);
     const [value3, setValue3] =  React.useState(0);

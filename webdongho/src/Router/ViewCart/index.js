@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CircularProgress from '@mui/material/CircularProgress';
 import SellIcon from '@mui/icons-material/Sell';
 import Box from '@mui/material/Box';
@@ -6,6 +6,11 @@ import Information from "../../component/contact";
 import "./style.css";
 
 function ViewCart() {
+    // Tự động scroll khi chuyển trang
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
     return (
         <>
             <div className="view-cart">

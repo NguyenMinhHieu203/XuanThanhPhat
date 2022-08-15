@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import image1 from "./images/news-1-150x150.jpg";
 import image2 from "./images/news-2-150x150.jpg";
@@ -23,6 +23,11 @@ import Information from "../../component/contact";
 import "./style.css";
 
 function Classic() {
+    // Tự động scroll khi chuyển trang
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
     return (
         <>
             <div className="app-6">

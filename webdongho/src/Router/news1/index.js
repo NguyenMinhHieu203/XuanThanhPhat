@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import image1 from "./images/news-1-150x150.jpg";
@@ -17,7 +17,12 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import Information from "../../component/contact";
 import "./style.css";
 
-function newsOne() {
+function News1() {
+    // Tự động scroll khi chuyển trang
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
     return (
         <div className="app-4.1">
         <div className="newstotal">
@@ -112,4 +117,4 @@ function newsOne() {
     );
 }
 
-export default newsOne;
+export default News1;

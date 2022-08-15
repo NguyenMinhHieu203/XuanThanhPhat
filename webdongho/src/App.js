@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './Router/Home';
 import InforPage from './Router/Introduce';
@@ -57,40 +58,52 @@ import Psyk from "./Router/psy";
 import Psy1 from "./Router/PSYDetails/product1";
 import Psy2 from "./Router/PSYDetails/product2";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import ViewCart from "./Router/ViewCart";
 import './App.css';
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
   return (
     <div className='app'>
-      <Title />
-      <div className='menu'>
-        <Link to="/home" className="link">TRANG CHỦ</Link>
-        <Link to="/infor" className="link">GIỚI THIỆU</Link>
-        <div class="dropdown">
-          <Link to="/women" class="dropbtn">NỮ<KeyboardArrowDownIcon /></Link>
-          <div class="dropdown-content">
-            <Link to="/women/classic">Classic</Link>
-            <Link to="/women/sunbaked">Sunbaked</Link>
-            <Link to="/women/chuck07s">Chuck 07 s</Link>
-            <Link to="/women/onestar">One Star</Link>
-            <Link to="/women/psykicks">PSY - Kicks</Link>
+      <div className='contains'>
+        <Title />
+        <div className='menu'>
+          <Link to="/home" className="link">TRANG CHỦ</Link>
+          <Link to="/infor" className="link">GIỚI THIỆU</Link>
+          <div class="dropdown">
+            <Link to="/women" class="dropbtn">NỮ<KeyboardArrowDownIcon /></Link>
+            <div class="dropdown-content">
+              <Link to="/women/classic">Classic</Link>
+              <Link to="/women/sunbaked">Sunbaked</Link>
+              <Link to="/women/chuck07s">Chuck 07 s</Link>
+              <Link to="/women/onestar">One Star</Link>
+              <Link to="/women/psykicks">PSY - Kicks</Link>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <Link to="/men" class="dropbtn">NAM<KeyboardArrowDownIcon /></Link>
-          <div class="dropdown-content">
-            <Link to="/women/classic">Classic</Link>
-            <Link to="/women/sunbaked">Sunbaked</Link>
-            <Link to="/women/chuck07s">Chuck 07 s</Link>
-            <Link to="/women/onestar">One Star</Link>
-            <Link to="/women/psykicks">PSY - Kicks</Link>
+          <div class="dropdown">
+            <Link to="/men" class="dropbtn">NAM<KeyboardArrowDownIcon /></Link>
+            <div class="dropdown-content">
+              <Link to="/women/classic">Classic</Link>
+              <Link to="/women/sunbaked">Sunbaked</Link>
+              <Link to="/women/chuck07s">Chuck 07 s</Link>
+              <Link to="/women/onestar">One Star</Link>
+              <Link to="/women/psykicks">PSY - Kicks</Link>
+            </div>
           </div>
+          <Link to="/child" className="link">TRẺ EM</Link>
+          <Link to="/accessories" className="link">PHỤ KIỆN KHÁC</Link>
+          <Link to="/news" className="link">TIN TỨC</Link>
+          <Link to="/contact" className="link">LIÊN HỆ</Link>
         </div>
-        <Link to="/child" className="link">TRẺ EM</Link>
-        <Link to="/accessories" className="link">PHỤ KIỆN KHÁC</Link>
-        <Link to="/news" className="link">TIN TỨC</Link>
-        <Link to="/contact" className="link">LIÊN HỆ</Link>
+        {/* <div className='btn-contains'>
+          <KeyboardArrowUpIcon onClick={scrollToTop} style={{fontSize: "300%", color: "gray", borderRadius: "50%", border: "0.1em solid gray"}}/>
+        </div> */}
       </div>
       <div>
         <Routes>

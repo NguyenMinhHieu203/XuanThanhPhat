@@ -12,15 +12,18 @@ import image9 from "./sale/balo-4-300x225.jpg";
 import "./style.css";
 
 function Sale() {
-    const [color, setColor] = useState("gray");
-    const [backgroundColor, setBackgroundColor] = useState("white");
+    const [border, setBorder] = useState("0.09375em solid gray")
+    const [color, setColor] = useState("white");
+    const [backgroundColor, setBackgroundColor] = useState("gray");
     const handleEnterBtn = () => {
+        setBorder("0.09375em solid red");
         setColor("white");
         setBackgroundColor("red");
     }
     const handleLeaveBtn = () => {
-        setColor("gray");
-        setBackgroundColor("white");
+        setBorder("0.09375em solid gray");
+        setColor("white");
+        setBackgroundColor("gray");
     }
     // Set hover cho button thêm vào giỏ
     const [button1, setButton1] = useState("hidden");
@@ -160,7 +163,7 @@ function Sale() {
                     </Button>
                 </div>
             </div>
-            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%", marginTop: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}><Link to="/accessories" style={{textDecoration: 'none', color: 'white'}}>XEM TẤT CẢ</Link></Button>
+            <Button style={{backgroundColor: `${backgroundColor}`, color: `${color}`, border: `${border}`, fontWeight: "bold", display: "flex", marginLeft: "50%", marginBottom: "1%", marginTop: "1%"}} onMouseEnter={handleEnterBtn} onMouseLeave={handleLeaveBtn}><Link to="/accessories" style={{textDecoration: 'none', color: 'white'}}>XEM TẤT CẢ</Link></Button>
         </div>
     );
 }

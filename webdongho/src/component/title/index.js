@@ -82,23 +82,23 @@ function Title() {
         setOpenSignUp(false);
     }
 
-    // Kích hoạt button search
-    const [openSearch, setOpenSearch] = useState(false);
-    const handleEnterSearch = () => {
-        setOpenSearch(true);
-    }
-    const handleLeaveSearch = () => {
-        setOpenSearch(false);
-    }
+    // // Kích hoạt button search
+    // const [openSearch, setOpenSearch] = useState(false);
+    // const handleEnterSearch = () => {
+    //     setOpenSearch(true);
+    // }
+    // const handleLeaveSearch = () => {
+    //     setOpenSearch(false);
+    // }
 
-    // Kích hoạt cho button giỏ hàng
-    const [openBasket, setBasket] = useState(false);
-    const handleEnterBasket = () => {
-        setBasket(true);
-    }
-    const handleLeaveBasket = () => {
-        setBasket(false);
-    }
+    // // Kích hoạt cho button giỏ hàng
+    // const [openBasket, setBasket] = useState(false);
+    // const handleEnterBasket = () => {
+    //     setBasket(true);
+    // }
+    // const handleLeaveBasket = () => {
+    //     setBasket(false);
+    // }
 
     // Set color cho button đăng kí
     const [signUpColor, setSignUpColor] = useState("gray");
@@ -118,8 +118,8 @@ function Title() {
             <div>S N E<StarBorderIcon style={{fontSize: "100%", marginBottom: "5%"}} />K E R</div>
             </div>
             <div>
-            <Button startIcon={<SearchIcon />} onMouseEnter={handleEnterSearch} onMouseLeave={handleLeaveSearch} className="search"></Button>
-            <Button endIcon={<AddShoppingCartIcon />} onMouseEnter={handleEnterBasket} onMouseLeave={handleLeaveBasket} className="basket">Giỏ hàng / 0đ</Button>
+            <Button startIcon={<SearchIcon />}  className="search"></Button>
+            <Button endIcon={<AddShoppingCartIcon />}  className="basket">Giỏ hàng / 0đ</Button>
             </div>
         </div>
 
@@ -173,7 +173,7 @@ function Title() {
             )
             }
 
-            {openSearch && (
+            {/* {openSearch && (
                 <div class="modalSearch" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -198,7 +198,7 @@ function Title() {
                 </div>
                 </div>
             )
-            }
+            } */}
         </div>
             )
 } 
