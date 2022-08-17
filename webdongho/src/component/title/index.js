@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
@@ -7,7 +8,21 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import "./style.css";
 
-function Title() {
+function Title(props) {
+    const [check, setCheck] = useState("");
+    const handleLogOut = () => {
+        setCheck("");
+        setTextSignIn("Đăng nhập");
+        props.handleSet("");
+        handleCloseLogOut();
+    }
+    const [openLogOut, setOpenLogOut] = useState(false);
+    const handleOpenLogout = () => {
+        setOpenLogOut(true);
+    }
+    const handleCloseLogOut = () => {
+        setOpenLogOut(false);
+    }
     // Lấy ra thông tin người dùng 
     const [user, setUser] = useState([]);
     useEffect(() => {
@@ -21,6 +36,10 @@ function Title() {
         while(i < user.length) {
             if(emailSignIn === user[i].email && passwordSignIn === user[i].password) {
                 setTextSignIn(user[i].email);
+                props.handleSet(user[i].id);
+                setCheck("1");
+                setEmailSignIn("");
+                setPasswordSignIn("");
                 handleCloseSignIn();
                 check = true;
                 break;
@@ -52,6 +71,9 @@ function Title() {
                     password: password
                 }
                 axios.post("http://localhost:4020/user", data).then((res) => alert("Đăng ký thành công"), handleCloseSignUp(), handleCloseSignIn());
+                setEmailSignIn("");
+                setPasswordSignIn("");
+                setPasswordConfirmation("");
             }
         } 
         else {
@@ -112,14 +134,14 @@ function Title() {
     return(
         <div className="app7">
             <div className='header'>
-            <Button onClick={handleSignIn} className="signIn">{textSignIn}</Button>
+            <Button onClick={check === "" ? handleSignIn : handleOpenLogout} className="signIn">{textSignIn}</Button>
             <div className='shopName'>
             <div>MONA</div>
             <div>S N E<StarBorderIcon style={{fontSize: "100%", marginBottom: "5%"}} />K E R</div>
             </div>
             <div>
             <Button startIcon={<SearchIcon />}  className="search"></Button>
-            <Button endIcon={<AddShoppingCartIcon />}  className="basket">Giỏ hàng / 0đ</Button>
+            <Button endIcon={<AddShoppingCartIcon />}  className="basket"><Link to="/viewcart" style={{textDecoration: "none"}}>Giỏ hàng / 0đ</Link></Button>
             </div>
         </div>
 
@@ -173,7 +195,24 @@ function Title() {
             )
             }
 
-            {/* {openSearch && (
+            {openLogOut && (
+                <div class="modalSignIn" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bạn có muốn đăng xuất không?</h5>
+                        <button onClick={handleCloseLogOut} type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" onClick={handleLogOut}>ĐĂNG XUẤT</button>
+                        <button type="button" style={{color: "black", backgroundColor: "white", border: "none", fontWeight: "bold"}} onClick={handleCloseLogOut}>HỦY</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            )
+            }
+             {/* {openSearch && (
                 <div class="modalSearch" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -198,7 +237,7 @@ function Title() {
                 </div>
                 </div>
             )
-            } */}
+            }  */}
         </div>
             )
 } 

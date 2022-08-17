@@ -16,9 +16,15 @@
       "id": "sD_fMvI"
     },
     {
-      "email": "nguyenthuyhang",
+      "email": "nguyenthuyhang@gmail.com",
       "password": "hang012",
       "id": "rdR0Ah6"
+    },
+    {
+      "email": "hoangthiminhthuy@gmail.com",
+      "password": "thuy034",
+      "id": "xP3on-O"
     }
-  ]
+  ],
+  "basket": []
 }

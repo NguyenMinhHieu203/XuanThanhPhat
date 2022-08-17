@@ -15,19 +15,19 @@
     color: white;
 }
 
-.search:hover {
+/* .search:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    z-index: 7;
+    z-index: 3;
 }
 
 .basket:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    z-index: 7;
-}
+    z-index: 3;
+} */
 
 .content {
     font-weight: bold;
@@ -68,18 +68,23 @@
     z-index: 7;
 }
   
-.modalSearch {
-    position: absolute;
+/* .modalSearch {
     left: 72%;
     top: 10%;
-    z-index: 2;
+    z-index: 7;
 }
   
 .modalBasket {
-    position: absolute;
     left: 72%;
     top: 10%;
-    z-index: 2;
+    z-index: 7;
+} */
+
+.btn-cancel {
+    background-color: #e7e7e7; 
+    color: black;
+    border: 0.0625em solid #e7e7e7;
+    border-radius: 0.9375em;
 }
 
   

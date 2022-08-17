@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
+import axios from "axios";
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -106,7 +107,24 @@ const labels = {
     5: 'Excellent+',
 };
 
-function ChildShoe4() {
+function ChildShoe4(props) {
+    // Chứa giá trị trong biến để tiện đẩy lên database
+    let productName = "Chuck Taylor All Star Simple Step Summer Fundamentals";
+    let productPrice = "750,000đ";
+    let total = productPrice.slice(0, 3) + productPrice.slice(4, productPrice.length - 1);
+
+    // Đẩy thông tin sản phẩm lên database basket
+    const handleBasket = () => {
+        if(props.id !== "") {
+            const product = {
+                id: props.id,
+                name: productName,
+                price: total,
+                amount: number
+            }
+            axios.post("http://localhost:4020/basket", product);
+        }
+    }
     // Tự động scroll khi chuyển trang
     useEffect(() => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -198,8 +216,8 @@ function ChildShoe4() {
                         <div>/</div>
                         <Link to="/child" className="link-childs">TRẺ EM</Link>
                     </div>
-                    <p className="name-product">Chuck Taylor All Star Simple Step Summer Fundamentals</p>
-                    <p className="price-product">750,000đ</p>
+                    <p className="name-product">{productName}</p>
+                    <p className="price-product">{productPrice}</p>
                     <div className="three-btn">
                         <div className="btn-amount">
                             <button onClick={handleDecrease} className="btn-decre">-</button>

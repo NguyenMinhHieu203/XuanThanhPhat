@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
+import axios from "axios";
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -113,7 +114,24 @@ const labels = {
     5: 'Excellent+',
 };
 
-function ProductShoes3() {
+function ProductShoes3(props) {
+    // Chứa giá trị trong biến để tiện đẩy lên database
+    let productName = "One Star Love The Progress";
+    let productPrice = "1,250,000đ";
+    let total = productPrice.slice(0, 1) + productPrice.slice(2, 5) + productPrice.slice(6, productPrice.length - 1);
+
+    // Đẩy thông tin sản phẩm lên database basket
+    const handleBasket = () => {
+        if(props.id !== "") {
+            const product = {
+                id: props.id,
+                name: productName,
+                price: total,
+                amount: number
+            }
+            axios.post("http://localhost:4020/basket", product);
+        }
+    }
     // Tự động scroll khi chuyển trang
     useEffect(() => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -210,15 +228,15 @@ function ProductShoes3() {
                         <div>/</div>
                         <Link to="/child" className="link-childs">Onestar</Link>
                     </div>
-                    <p className="name-product">One Star Love The Progress</p>
-                    <p className="price-product">1,250,000đ</p>
+                    <p className="name-product">{productName}</p>
+                    <p className="price-product">{productPrice}</p>
                     <div className="three-btn">
                         <div className="btn-amount">
                             <button onClick={handleDecrease} className="btn-decre">-</button>
                             <div className="amount-number">{number}</div>
                             <button onClick={handleIncrease} className="btn-incre">+</button>
                         </div>
-                        <Button style={{ color: "white", backgroundColor: "rgb(178,34,34)", fontWeight: "bold" }}><Link to="/viewcart" style={{ textDecoration: "none", color: "white" }}>THÊM VÀO GIỎ</Link></Button>
+                        <Button style={{ color: "white", backgroundColor: "rgb(178,34,34)", fontWeight: "bold" }} onClick={handleBasket}><Link to="/viewcart" style={{ textDecoration: "none", color: "white" }}>THÊM VÀO GIỎ</Link></Button>
                     </div>
                     <div>
                         <div className="payment">

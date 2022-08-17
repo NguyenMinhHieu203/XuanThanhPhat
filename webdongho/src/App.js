@@ -69,10 +69,14 @@ function App() {
       behavior: 'smooth'
     });
   }
+
+  // Set id để gán cho sản phẩm tương ứng với người mua
+  const [id, setId] = useState("");
+
   return (
     <div className='app'>
       <div className='contains'>
-        <Title />
+        <Title handleSet={setId}/>
         <div className='menu'>
           <Link to="/home" className="link">TRANG CHỦ</Link>
           <Link to="/infor" className="link">GIỚI THIỆU</Link>
@@ -112,57 +116,57 @@ function App() {
           <Route path="/infor" element={<InforPage />}></Route>
           <Route path="/women" element={<WomenPage />}></Route>
           <Route path="/women/classic" element={<Class />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-3" element={<Class1 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-4" element={<Class2 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-5" element={<Class3 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-2" element={<Class4 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-7" element={<Class5 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-8" element={<Class6 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-3" element={<Class1 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-4" element={<Class2 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-5" element={<Class3 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-2" element={<Class4 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-7" element={<Class5 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-8" element={<Class6 id = { id } />}></Route>
           <Route path="/women/sunbaked" element={<Sun />}></Route>
-          <Route path="/Cart/One-Star-Sunbaked-3" element={<Sun1 />}></Route>
-          <Route path="/Cart/One-Star-Sunbaked-4" element={<Sun2 />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-3" element={<Sun1 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-4" element={<Sun2 id = { id } />}></Route>
           <Route path="/women/chuck07s" element={<Chuck />}></Route>
-          <Route path="/Cart/Chuck-70-Archive-Prints" element={<Chuck1 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-70-Full-Gator" element={<Chuck2 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-70-Pastel-Leather" element={<Chuck3 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-70-Poplin-Shirt" element={<Chuck4 />}></Route>
+          <Route path="/Cart/Chuck-70-Archive-Prints" element={<Chuck1 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Full-Gator" element={<Chuck2 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Pastel-Leather" element={<Chuck3 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-70-Poplin-Shirt" element={<Chuck4 id = { id } />}></Route>
           <Route path="/women/onestar" element={<Ones />}></Route>
-          <Route path="/Cart/One-Star-Love-The-Progress-6" element={<One1 />}></Route>
-          <Route path="/Cart/One-Star-Love-The-Progress-7" element={<One2 />}></Route>
-          <Route path="/Cart/One-Star-Love-The-Progress-8" element={<One3 />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-6" element={<One1 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-7" element={<One2 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-8" element={<One3 id = { id } />}></Route>
           <Route path="/women/psykicks" element={<Psyk />}></Route>
-          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-1" element={<Psy1 />}></Route>
-          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-2" element={<Psy2 />}></Route>
+          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-1" element={<Psy1 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-70-Psy-Kicks-Ox-2" element={<Psy2 id = { id } />}></Route>
           <Route path="/men" element={<MenPage />}></Route>
           <Route path="/child" element={<ChildPage />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Creatures-Boston-x-London-Transport" element={<ChildShoe1 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Boston-x-London-Transport" element={<ChildShoe2 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Gaming-Camo" element={<ChildShoe3 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals" element={<ChildShoe4 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals-2" element={<ChildShoe5 />}></Route>
-          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Watermelon" element={<ChildShoe6 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Creatures-Boston-x-London-Transport" element={<ChildShoe1 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Boston-x-London-Transport" element={<ChildShoe2 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Gaming-Camo" element={<ChildShoe3 id = { id }/>}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals" element={<ChildShoe4 id = { id }/>}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Summer-Fundamentals-2" element={<ChildShoe5 id = { id }/>}></Route>
+          <Route path="/Cart/Chuck-Taylor-All-Star-Simple-Step-Watermelon" element={<ChildShoe6 id = { id }/>}></Route>
           <Route path="/accessories" element={<AccessoriesPage />}></Route>
-          <Route path="/Cart/Converse-X-Suicidal-Tendencies-Long" element={<Accesories1 />}></Route>
-          <Route path="/Cart/Converse-Metal-Cons-Pull-Over-Hoodie" element={<Accesories2 />}></Route>
-          <Route path="/Cart/Converse-Star-Chevron-Jogger" element={<Accesories3 />}></Route>
-          <Route path="/Cart/Converse-Collegiate-Text-SS-Tee" element={<Accesories4 />}></Route>
-          <Route path="/Cart/CSport-Duffel" element={<Accesories5 />}></Route>
-          <Route path="/Cart/Lil-Duffel" element={<Accesories6 />}></Route>
-          <Route path="/Cart/Speed-2-Backpack" element={<Accesories7 />}></Route>
-          <Route path="/Cart/Poly-Chuck-Plus-1.0" element={<Accesories8 />}></Route>
+          <Route path="/Cart/Converse-X-Suicidal-Tendencies-Long" element={<Accesories1 id = { id }/>}></Route>
+          <Route path="/Cart/Converse-Metal-Cons-Pull-Over-Hoodie" element={<Accesories2 id = { id }/>}></Route>
+          <Route path="/Cart/Converse-Star-Chevron-Jogger" element={<Accesories3 id = { id }/>}></Route>
+          <Route path="/Cart/Converse-Collegiate-Text-SS-Tee" element={<Accesories4 id = { id }/>}></Route>
+          <Route path="/Cart/CSport-Duffel" element={<Accesories5 id = { id }/>}></Route>
+          <Route path="/Cart/Lil-Duffel" element={<Accesories6 id = { id }/>}></Route>
+          <Route path="/Cart/Speed-2-Backpack" element={<Accesories7 id = { id }/>}></Route>
+          <Route path="/Cart/Poly-Chuck-Plus-1.0" element={<Accesories8 id = { id } />}></Route>
           <Route path="/news" element={<NewsPage />}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-1" element={<ProductShoes1/>}></Route>
-          <Route path="/Cart/Chuck-Taylor-Classic-6" element={<ProductShoes2/>}></Route>
-          <Route path="/Cart/One-Star-Love-The-Progress-5" element={<ProductShoes3 />}></Route>
-          <Route path="/Cart/One-Star-Sunbaked-1" element={<ProductShoes4 />}></Route>
-          <Route path="/Cart/One-Star-Sunbaked-2" element={<ProductShoes5 />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-1" element={<ProductShoes1 id = { id } />}></Route>
+          <Route path="/Cart/Chuck-Taylor-Classic-6" element={<ProductShoes2 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Love-The-Progress-5" element={<ProductShoes3 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-1" element={<ProductShoes4 id = { id } />}></Route>
+          <Route path="/Cart/One-Star-Sunbaked-2" element={<ProductShoes5 id = { id } />}></Route>
           <Route path="news-1" element={<News1 />}></Route>
           <Route path="news-2" element={<News2 />}></Route>
           <Route path="news-3" element={<News3 />}></Route>
           <Route path="news-4" element={<News4 />}></Route>
           <Route path="news-5" element={<News5 />}></Route>
           <Route path="news-6" element={<News6 />}></Route>
-          <Route path="/viewcart" element={<ViewCart />}></Route>
+          <Route path="/viewcart" element={<ViewCart id={ id }/>}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
         </Routes>
       </div>
