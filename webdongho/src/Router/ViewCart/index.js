@@ -22,7 +22,8 @@ function ViewCart(props) {
 
     // Tạo hàm cho button thanh toán 
     const handleSuccess = () => {
-        axios.delete(`http://localhost:4020/basket/${props.id}`).then((res) => alert("Thanh toán thành công"));
+        axios.delete(`http://localhost:4020/basket/${props.id}`);
+        alert("Thanh toán thành công");
     }
     return (
         <>
