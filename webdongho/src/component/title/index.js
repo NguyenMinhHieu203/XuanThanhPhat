@@ -161,7 +161,6 @@ function Title(props) {
                     </div>
                     <div class="modal-footer">
                         <button onClick={handleSignUp} onMouseEnter={handleEnterSignUp} onMouseLeave={handleLeaveSignUp} type="button" style={{color: `${signUpColor}`, backgroundColor: "white", border: "none", fontWeight: "bold"}} className="signUp">Đăng ký</button>
-                        <button onClick={handleCloseSignIn} type="button" data-bs-dismiss="modal" style={{border: "none", backgroundColor: "white", color: "rgb(30,144,255)"}} >Quên mật khẩu</button>
                         <button type="button" class="btn btn-primary" onClick={signInUser}>ĐĂNG NHẬP</button>
                     </div>
                     </div>
