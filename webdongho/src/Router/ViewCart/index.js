@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import SellIcon from '@mui/icons-material/Sell';
 import Box from '@mui/material/Box';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import Information from "../../component/contact";
 import "./style.css";
 
@@ -10,7 +11,7 @@ function ViewCart(props) {
     const [basket, setBasket] = useState([]);
     useEffect(() => {
         axios.get(`http://localhost:4020/basket`).then((res) => setBasket(res.data));
-    }, []);
+    }, [basket]);
     
     // Tự động scroll khi chuyển trang
     useEffect(() => {
@@ -23,7 +24,12 @@ function ViewCart(props) {
     // Tạo hàm cho button thanh toán 
     const handleSuccess = () => {
         axios.delete(`http://localhost:4020/basket/${props.id}`);
-        alert("Thanh toán thành công");
+        if(basket !== "") {
+            alert("Thanh toán thành công");
+        }
+    }
+    const handleDelete = () => {
+        axios.delete(`http://localhost:4020/basket/${props.id}`);
     }
     return (
         <>
@@ -37,6 +43,7 @@ function ViewCart(props) {
                                     <th scope="col">Giá</th>
                                     <th scope="col">Số lượng</th>
                                     <th scope="col">Tổng</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                                     <tbody>
@@ -49,6 +56,7 @@ function ViewCart(props) {
                                                         <td>{el.price}</td>
                                                         <td>{el.amount}</td>
                                                         <td>{Number(el.price) * Number(el.amount)}</td>
+                                                        <td><DeleteOutlineIcon onClick={handleDelete}/></td>
                                                     </tr>
                                                     );
                                                 }
